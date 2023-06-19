@@ -1,0 +1,95 @@
+/* Importando uma fonte */
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+/* Definir as variáveis de ambiente do CSS */
+:root {
+    --bg-cor-fundo: rgb(13 59 23);
+    --bg-cor-main: rgb(54 236 154);
+    --bg-cor-main-dark: rgb(3 16 6);
+    --cor-texto: rgb(255 255 255);
+}
+
+/* Resetar as definiçoes dos navegadores */
+*{
+    outline:  0;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-cor-fundo);
+    font-family: 'Kablammo';
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-cor-main);
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: var(--cor--texto);
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    width: 90%;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--bg-cor-main);
+    color: var(--cor-texto);
+    height: 60px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+aside{
+    width: 50%;
+}
+
+aside img{
+    width: 75%;
+}
+
+.contato {
+    width: 50%;
+}
+
+form label, form input {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+form input {
+    height: 40px;
+    padding: 20px;
+    font-size: 23px;
+ 
+}
+
+form input:focus {
+    outline: 1px solid var(--bg-cor-main-dark);
+}
+
+form button {
+    height: 40px;
+   font-size: 28px;
+   border-radius: 10px;
+   background: var(--bg-cor-fundo);
+   color: var(--cor-texto);
+
+}
